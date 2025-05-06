@@ -3,105 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Night-Out</title>
+    <title>Single donut</title>
+
     <style>
+        :root {
+            --green: #01843f;
+            --white: #ffff;
+            --red: #d52b1e;
+            --shadow: 0px 4px 12px rgba(0,0,0 .30);
+        }
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color:burlywood;
-            color: #0a0a66;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 1rem; 
+        }
+        header {
+            background: linear-gradient(90deg,var(--green),var(--white),var(--red));
+            color: #483e3e;
+            border-radius: .3rem;
+            box-shadow: var(--shadow);
+            transition: transform .02s;
+        }
+        header:hover {
+            transform: scale(1.02);
          }
-         table {
-            margin: 19px auto;
-            border-collapse: collapse;
-            background-color: white;
+         main{
+            width: 100%;
+            max-width: 700px;
          }
-         th {
-            border: 20px soild white
-            }
-        
-            th {
-            background:white; 
-            color: #0a0a66;
+         footer {
+            margin: 2rem;
+            color:grey;
+            font-size: 0.5rem;
          }
-         button {
-            background: black; 
-            color: #E3DAC9;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block; 
-            margin: 10px 0px;
-            font-weight: bold;
+         details {
+            background: #cacaca;
+            border-radius: .6rem;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+            font-size: 1.2rem;
          }
-         td {
-        border: 2.5px solid green;
-         }
-         </style>
+         details[open] {
+            outline: 2px solid var(--green);
+        }
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+        img {
+
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:black;">Movie Night</h1>
-    <p style="color:black; font-size:30px;"><b>\（⊙ｏ⊙）/</b></p>
-    <h2 style="color: rgb(177, 19, 19);">Premeier Ted</h2>
-    <div class="highlight-box">
-        <h2>Highlights</h2>
-        <p>•Free Ted Hoodie</p>
-        <p>•Free Chipotle Bowls</p>
-        <p>•Free Drinks</p>
-    </div>
-    
-    <h2>Schedule</h2>
-    <table>
-        <tr>
-            <th>Time</th>
-            <th>Activity</th>
-        </tr>
-        <tr>
-            <td>6pm</td>
-            <td>Doors opens</td>
-        </tr>
-        <tr>
-            <td>6:30pm</td>
-            <td>Movie begin</td>
-        </tr>
-        <tr>
-            <td>8pm</td>
-            <td>Chipotle Bowl Pickups</td>
-        </tr>
-        <tr>
-            <td>8:30pm</td>
-            <td>Moive Resume</td>
-        </tr>
-        <tr>
-            <td>9pm</td>
-            <td>Event Ends</td>
-        </tr>
-    </table>
-    <br>
-    <img src="https://images.moviesanywhere.com/movie-hero/fc2976fcb7c6bec62ef9f02e2782dfd0.jpeg?r=16x9&w=3840" height="200" width="300">
-    <p>A Luh calm Movie</p>
-    <a href="https://www.strava.com/athletes/126692380" class="trailer button">(Click Here) if it's the right link lol!</a>
+    <header>
+        <h1>Single Donut</h1>
+        <p>5 de mayo.Donwtown LA, Los Angeles</p>
+    </header>
+    <main>
+        <!-- Content Coming soon-->
+         <!-- Accordion 1-->
+    </main>
+    <details>
+        <summary>Why do we like eating donuts?</summary>
+        <p>I just like eating choclate coated donut lol.</p>
+    </details>
 
-    <div class="Contact info">
-        <h2>Contact Information</h2>
-
-        <p><strong>Cell:</strong><br><a href="https://www.youtube.com/watch?v=xeAj5fWUJC0&ab_channel=AwkwardPuppets" class="cell button">(213)-569-900</a>
-        
-        <p><strong>Email</strong><br><a href="https://www.youtube.com/watch?v=KJotmmDJWAg&ab_channel=SoundEffectsandGreenScreen"class="Email button">joemama@yhoo.com</a></p>
-        </div>
-        <style>
-            
-    a { text-decoration: none;
-    }
-    .contact{
-        
-    } 
-        </style>
-</head>
-
+    <details>
+        <summary>Quick recipe for Donut</summary>
+        <img src="">
+        <ul>
+            <li>Dump 5 gallon of oil</li>
+            <li>warm tortilla</li>
+            <li>put salsa, lime, cheese</li>
+            <li>enjoy your food!</li>
+        </ul>
+    </details>
+    <footer>
+        Viva Los Agenles&copy 2025
+    </footer>
 
 </body>
 </html>
